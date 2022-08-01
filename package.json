@@ -1,6 +1,6 @@
 {
   "name": "ai-install",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Avoid executing 'npm install'.",
   "main": "index.js",
   "bin": {
