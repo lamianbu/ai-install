@@ -6,7 +6,7 @@ In some project, package.json
 {
   "name": "ai-install-demo",
   "scripts": {
-    "start": "npx ai-install && vite",
+    "start": "npx -y ai-install && vite",
     ...
   },
   "devDependencies": {
@@ -24,7 +24,7 @@ npm install
 ```
 # because
 ```
-npx ai-install
+npx -y ai-install
 ```
 executing 'npm install' if not installed.
 # src
@@ -36,15 +36,12 @@ var child_process = require('child_process');
 if (!fs.existsSync('node_modules')) {
   child_process.execSync('npm i', { stdio: 'inherit' });
 }
-if (!fs.existsSync('node_modules/npm-install')) {
-  child_process.execSync('npm i ai-install -D', { stdio: 'inherit' });
-}
 ```
 package.json
 ```
 {
   "name": "ai-install",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Avoid executing 'npm install'.",
   "main": "index.js",
   "bin": {
