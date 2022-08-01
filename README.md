@@ -44,7 +44,7 @@ package.json
 ```
 {
   "name": "ai-install",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Avoid executing 'npm install'.",
   "main": "index.js",
   "bin": {
