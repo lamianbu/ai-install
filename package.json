@@ -4,7 +4,7 @@
   "description": "Avoid executing 'npm install'.",
   "main": "index.js",
   "bin": {
-    "npm-install": "index.js"
+    "ai-install": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +15,7 @@
   },
   "keywords": [
     "npx",
-    "npm-install",
+    "ai-install",
     "install"
   ],
   "author": "lamianbu",
