@@ -28,27 +28,27 @@ npx ai-install
 ```
 executing 'npm install' if not installed.
 # src
-index.mjs
+index.js
 ```
-import { existsSync } from 'fs';
-import { execSync } from 'child_process';
+var fs = require('fs');
+var child_process = require('child_process');
 
-if (!existsSync('node_modules')) {
-  execSync('npm i', { stdio: 'inherit' });
+if (!fs.existsSync('node_modules')) {
+  child_process.execSync('npm i', { stdio: 'inherit' });
 }
-if (!existsSync('node_modules/npm-install')) {
-  execSync('npm i ai-install -D', { stdio: 'inherit' });
+if (!fs.existsSync('node_modules/npm-install')) {
+  child_process.execSync('npm i ai-install -D', { stdio: 'inherit' });
 }
 ```
 package.json
 ```
 {
   "name": "ai-install",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Avoid executing 'npm install'.",
-  "main": "index.mjs",
+  "main": "index.js",
   "bin": {
-    "ai-install": "index.mjs"
+    "ai-install": "index.js"
   },
   ...
 }
