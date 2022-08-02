@@ -27,14 +27,29 @@ npm install
 npx -y ai-install
 ```
 executing `npm install` if not installed.
+## yarn & pnpm
+```shell
+npx -y ai-install
+```
+In yarn project, auto executing `yarn install` if not installed.
+
+In pnpm project, auto executing `pnpm install` if not installed.
 ## src
 index.js
 ```js
+#!/usr/bin/env node
+
 var fs = require('fs');
 var child_process = require('child_process');
 
 if (!fs.existsSync('node_modules')) {
-  child_process.execSync('npm i', { stdio: 'inherit' });
+  if(fs.existsSync('yarn.lock')){
+    child_process.execSync('yarn install', { stdio: 'inherit' });
+  } else if (fs.existsSync('pnpm-lock.yaml')){
+    child_process.execSync('pnpm install', { stdio: 'inherit' });
+  } else {
+    child_process.execSync('npm install', { stdio: 'inherit' });
+  }
 }
 ```
 package.json
