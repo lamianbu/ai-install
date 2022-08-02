@@ -1,12 +1,13 @@
 # ai-install
-Avoid executing 'npm install'
+No need 'npm install' if you add 'npx -y ai-install' to package.json script commands of your project.
 # example
-In some project, package.json
-```
+In your project, add 'npx -y ai-install' to package.json->scripts->start/build.
+```json{4,5}
 {
   "name": "ai-install-demo",
   "scripts": {
-    "start": "npx -y ai-install && vite",
+    "start": "npx -y ai-install && vite --open",
+    "build": "npx -y ai-install && vite build",
     ...
   },
   "devDependencies": {
@@ -14,11 +15,11 @@ In some project, package.json
   }
 }
 ```
-You can only 
+After 'git clone', you can only 
 ```
-npm start
+npm start 
 ```
-Avoid executing the command
+No need
 ```
 npm install
 ```
@@ -41,8 +42,8 @@ package.json
 ```
 {
   "name": "ai-install",
-  "version": "0.0.5",
-  "description": "Avoid executing 'npm install'.",
+  "version": "1.0.0",
+  "description": "No need 'npm install' if you add 'npx -y ai-install' to package.json script commands of your project.",
   "main": "index.js",
   "bin": {
     "ai-install": "index.js"
