@@ -1,4 +1,6 @@
-# 例子
+# ai-install 命令
+永别了 `npm install`, 让你的前端项目免执行 `npm install`.
+## 例子
 在你的前端项目中, 添加 `npx -y ai-install` 到  package.json->scripts->start/build.
 ```json
 {
@@ -20,7 +22,7 @@ npm start
 ```shell
 npm install
 ```
-# 原理
+## 原理
 package.json->scripts 中的
 ```shell
 npx -y ai-install
@@ -29,7 +31,7 @@ npx -y ai-install
 
 npx 优先执行本地命令，如果本地不存在则去 npmjs.com 查找。
 
-# yarn & pnpm
+## yarn & pnpm
 ```shell
 npx -y ai-install
 ```
@@ -37,7 +39,7 @@ npx -y ai-install
 
 如果 pnpm 项目未初始安装，会自动执行 `pnpm install`
 
-# 源代码
+## 源代码
 package.json 定义了一个 'ai-install' 的命令。
 ```json
 {
