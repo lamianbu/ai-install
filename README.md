@@ -2,7 +2,7 @@
 No need 'npm install' if you add 'npx -y ai-install' to package.json script commands of your project.
 # example
 In your project, add 'npx -y ai-install' to package.json->scripts->start/build.
-```json{4,5}
+```json
 {
   "name": "ai-install-demo",
   "scripts": {
@@ -16,21 +16,21 @@ In your project, add 'npx -y ai-install' to package.json->scripts->start/build.
 }
 ```
 After 'git clone', you can only 
-```
+```cmd
 npm start 
 ```
 No need
-```
+```cmd
 npm install
 ```
 # because
-```
+```cmd
 npx -y ai-install
 ```
 executing 'npm install' if not installed.
 # src
 index.js
-```
+```js
 var fs = require('fs');
 var child_process = require('child_process');
 
@@ -39,7 +39,7 @@ if (!fs.existsSync('node_modules')) {
 }
 ```
 package.json
-```
+```json
 {
   "name": "ai-install",
   "version": "1.0.0",
