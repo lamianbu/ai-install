@@ -6,11 +6,11 @@ In your project, add `npx -y ai-install` to package.json->scripts->start/build.
 {
   "name": "ai-install-demo",
   "scripts": {
-    "start": "npx -y ai-install && vite --open",
-    "build": "npx -y ai-install && vite build"
+    "start": "npx -y ai-install && xxx serve --open",
+    "build": "npx -y ai-install && xxx build"
   },
   "devDependencies": {
-    "vite": "3.0.0"
+    "xxx": "x.y.z"
   }
 }
 ```
