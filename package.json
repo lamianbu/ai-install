@@ -1,7 +1,7 @@
 {
   "name": "ai-install",
-  "version": "0.0.5",
-  "description": "Avoid executing 'npm install'.",
+  "version": "1.0.0",
+  "description": "No need 'npm install' if you add 'npx -y ai-install' to package.json script commands of your project.",
   "main": "index.js",
   "bin": {
     "ai-install": "index.js"
