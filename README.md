@@ -1,5 +1,5 @@
 # ai-install
-No need `npm install` if you add `npx -y ai-install` to package.json script commands of your project.
+Say goodbay to `npm install`, no need `npm install`, throw away `npm install`.
 ## example
 In your project, add `npx -y ai-install` to package.json->scripts->start/build.
 ```json
@@ -14,7 +14,7 @@ In your project, add `npx -y ai-install` to package.json->scripts->start/build.
   }
 }
 ```
-After `git clone`, you can only 
+After `git clone`, just
 ```shell
 npm start 
 ```
@@ -42,7 +42,7 @@ package.json
 {
   "name": "ai-install",
   "version": "1.0.0",
-  "description": "No need 'npm install' if you add 'npx -y ai-install' to package.json script commands of your project.",
+  "description": "Say goodbay to `npm install`, no need `npm install`, throw away `npm install`.",
   "main": "index.js",
   "bin": {
     "ai-install": "index.js"
