@@ -1,34 +1,33 @@
 # ai-install
-No need 'npm install' if you add 'npx -y ai-install' to package.json script commands of your project.
-# example
-In your project, add 'npx -y ai-install' to package.json->scripts->start/build.
+No need `npm install` if you add `npx -y ai-install` to package.json script commands of your project.
+## example
+In your project, add `npx -y ai-install` to package.json->scripts->start/build.
 ```json
 {
   "name": "ai-install-demo",
   "scripts": {
     "start": "npx -y ai-install && vite --open",
-    "build": "npx -y ai-install && vite build",
-    ...
+    "build": "npx -y ai-install && vite build"
   },
   "devDependencies": {
     "vite": "3.0.0"
   }
 }
 ```
-After 'git clone', you can only 
-```cmd
+After `git clone`, you can only 
+```shell
 npm start 
 ```
 No need
-```cmd
+```shell
 npm install
 ```
-# because
-```cmd
+## because
+```shell
 npx -y ai-install
 ```
-executing 'npm install' if not installed.
-# src
+executing `npm install` if not installed.
+## src
 index.js
 ```js
 var fs = require('fs');
@@ -47,7 +46,6 @@ package.json
   "main": "index.js",
   "bin": {
     "ai-install": "index.js"
-  },
-  ...
+  }
 }
 ```
