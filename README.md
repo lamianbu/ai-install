@@ -36,6 +36,12 @@ npx -y ai-install
 In yarn project, auto executing `yarn install` if not installed.
 
 In pnpm project, auto executing `pnpm install` if not installed.
+## think
+Does it save a second of typing `npm i`? no!
+
+After the installation of `npm i`, it was not seamlessly connected to `npm start`, which wasted 10 ~ 60 seconds.
+
+If you use `npx -y ai-install`, then `npm start` will likely start a minute earlier.
 ## src
 package.json defined a commond `ai-install`.
 ```json
