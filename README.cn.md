@@ -3,7 +3,7 @@
 ## 例子
 在你的前端项目中, 
 
-1) 添加 `npx -y ai-install` 到  package.json->scripts->start/build.
+1）添加 `npx -y ai-install` 到  package.json->scripts->start/build.
 ```json
 {
   "name": "ai-install-demo",
@@ -16,12 +16,12 @@
   }
 }
 ```
-2） 新增 npm-start.sh 文件，内容是:
+2）新增 npm-start.sh 文件，内容是:
 ```shell
 npm start
 ```
 
-那么 git clone 拉取代码之后, 双击运行 npm-start.sh ，免敲命令。
+那么 git clone 拉取代码之后, 双击 npm-start.sh 运行，免敲命令。
 
 ## 原理
 package.json->scripts 中的
@@ -32,14 +32,6 @@ npx -y ai-install
 
 npx 优先执行本地命令，如果本地不存在则去 npmjs.com 查找。
 
-## yarn & pnpm
-```shell
-npx -y ai-install
-```
-如果 yarn 项目未初始安装，会自动执行 `yarn install`
-
-如果 pnpm 项目未初始安装，会自动执行 `pnpm install`
-
 ## 思考
 
 它节省的是敲击 `npm i` 的一秒钟么？不是！
@@ -47,6 +39,14 @@ npx -y ai-install
 因为 `npm i` 安装结束后，并没能无缝衔接 `npm start`，浪费了10秒~60秒。
 
 如果使用 `npx -y ai-instal`l，那么 `npm start` 很可能提前一分钟启动。
+
+## yarn & pnpm
+```shell
+npx -y ai-install
+```
+如果 yarn 项目未初始安装，会自动执行 `yarn install`
+
+如果 pnpm 项目未初始安装，会自动执行 `pnpm install`
 
 ## 源代码
 package.json 定义了一个 'ai-install' 的命令。
