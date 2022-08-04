@@ -22,7 +22,7 @@ In your project,
 ```shell
 npm start 
 ```
-After `git clone`, just double click npm-start.sh, no typing command.
+After `git clone`, just double click npm-start.sh to start, no typing command.
 
 ## because
 ```shell
