@@ -2,7 +2,7 @@
 
 ### Features
 
-* **npm ci:** support npm ci if exists package-lock.json or npm-shrinkwrap.json.
+* **npm ci:** support 'npm ci' if exists package-lock.json or npm-shrinkwrap.json.
 
 ## 1.0.0 (2022-08-03)
 
