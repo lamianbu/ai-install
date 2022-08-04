@@ -16,6 +16,7 @@ In your project,
     "xxx": "x.y.z"
   }
 }
+```
 2. add a new file npm-start.sh, the content is: 
 
 ```shell
