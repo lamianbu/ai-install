@@ -4,6 +4,7 @@ Say goodbay to `npm install`, no need `npm install`, throw away `npm install`.
 In your project, 
 
 1) add `npx -y ai-install` to package.json->scripts->start/build.
+
 ```json
 {
   "name": "ai-install-demo",
@@ -16,6 +17,7 @@ In your project,
   }
 }
 2) add a new file npm-start.sh, the content is: 
+
 ```shell
 npm start 
 ```
