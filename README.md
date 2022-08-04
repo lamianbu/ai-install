@@ -3,7 +3,7 @@ Say goodbay to `npm install`, no need `npm install`, throw away `npm install`.
 ## example
 In your project, 
 
-1) add `npx -y ai-install` to package.json->scripts->start/build.
+1. add `npx -y ai-install` to package.json->scripts->start/build.
 
 ```json
 {
@@ -16,7 +16,7 @@ In your project,
     "xxx": "x.y.z"
   }
 }
-2) add a new file npm-start.sh, the content is: 
+2. add a new file npm-start.sh, the content is: 
 
 ```shell
 npm start 
