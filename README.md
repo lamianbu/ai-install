@@ -1,7 +1,9 @@
 # ai-install
 Say goodbay to `npm install`, no need `npm install`, throw away `npm install`.
 ## example
-In your project, add `npx -y ai-install` to package.json->scripts->start/build.
+In your project, 
+
+1) add `npx -y ai-install` to package.json->scripts->start/build.
 ```json
 {
   "name": "ai-install-demo",
@@ -13,15 +15,12 @@ In your project, add `npx -y ai-install` to package.json->scripts->start/build.
     "xxx": "x.y.z"
   }
 }
-```
-After `git clone`, just
+2) add a new file npm-start.sh, the content is: 
 ```shell
 npm start 
 ```
-No need
-```shell
-npm install
-```
+After `git clone`, just double click npm-start.sh, no typing command.
+
 ## because
 ```shell
 npx -y ai-install
