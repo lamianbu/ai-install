@@ -1,7 +1,9 @@
 # ai-install 命令
 永别了 `npm install`, 让你的前端项目免执行 `npm install`.
 ## 例子
-在你的前端项目中, 添加 `npx -y ai-install` 到  package.json->scripts->start/build.
+在你的前端项目中, 
+
+1) 添加 `npx -y ai-install` 到  package.json->scripts->start/build.
 ```json
 {
   "name": "ai-install-demo",
@@ -14,14 +16,13 @@
   }
 }
 ```
-那么 `git clone` 拉取代码之后, 仅直接执行
+2） 新增 npm-start.sh 文件，内容是:
 ```shell
 npm start
 ```
-免去执行
-```shell
-npm install
-```
+
+那么 git clone 拉取代码之后, 双击运行 npm-start.sh ，免敲命令。
+
 ## 原理
 package.json->scripts 中的
 ```shell
