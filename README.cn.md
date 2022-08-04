@@ -39,6 +39,14 @@ npx -y ai-install
 
 如果 pnpm 项目未初始安装，会自动执行 `pnpm install`
 
+## 思考
+
+它节省的是敲击 `npm i` 的一秒钟么？不是！
+
+因为 `npm i` 安装结束后，并没能无缝衔接 `npm start`，浪费了10秒~60秒。
+
+如果使用 `npx -y ai-instal`l，那么 `npm start` 很可能提前一分钟启动。
+
 ## 源代码
 package.json 定义了一个 'ai-install' 的命令。
 ```json
