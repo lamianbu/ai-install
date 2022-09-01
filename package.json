@@ -1,7 +1,7 @@
 {
   "name": "ai-install",
-  "version": "1.1.0",
-  "description": "Say goodbay to `npm install`, no need `npm install`, throw away `npm install`.",
+  "version": "1.1.1",
+  "description": "Say goodbye to `npm install`, no need `npm install`, throw away `npm install`.",
   "main": "index.js",
   "bin": {
     "ai-install": "index.js"

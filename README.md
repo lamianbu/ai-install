@@ -1,9 +1,11 @@
 # ai-install
-Say goodbay to `npm install`, no need `npm install`, throw away `npm install`.
+Say goodbye to `npm install`, no need `npm install`, throw away `npm install`.
 ## example
 In your project, 
 
-1. add `npx -y ai-install` to package.json->scripts->start/build.
+1. add `npx -y ai-install` (npm>=7) to package.json->scripts->start/build.
+
+   use `npx ai-install` (npm<=6).
 
 ```json
 {

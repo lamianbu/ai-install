@@ -3,7 +3,9 @@
 ## 例子
 在你的前端项目中, 
 
-1）添加 `npx -y ai-install` 到  package.json->scripts->start/build.
+1）添加 `npx -y ai-install`(npm>=7) 到  package.json->scripts->start/build.
+
+使用`npx -y ai-install`(npm<=6)
 ```json
 {
   "name": "ai-install-demo",
